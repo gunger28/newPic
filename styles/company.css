@@ -1,0 +1,649 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e5e5e5;
+  margin: 0;
+}
+
+.menu {
+  background-color: #2a2b33;
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .logo {
+  background-color: #ffffff;
+  background-image: url(../assets/logo1.png);
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.menu .element {
+  background-color: #ff6b00;
+  width: 102px;
+  height: 100%;
+  margin-left: 2px;
+  display: inline;
+  text-decoration: none;
+}
+
+.menu .element .image {
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  margin: auto auto;
+  width: 70px;
+  height: 75px;
+}
+
+.menu .element .title {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  height: 25px;
+  margin: auto auto;
+}
+
+.menu .office {
+  width: 50%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  margin-right: auto;
+}
+
+.menu .office .item {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24px;
+  text-indent: 10px;
+  color: white;
+  width: 100%;
+  height: 50%;
+  margin: auto auto;
+}
+
+.menu .contacts1 {
+  background-color: #ff6b00;
+  width: 260px;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  margin-left: auto;
+}
+
+.menu .contacts1 .item {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24px;
+  text-indent: 10px;
+  color: white;
+  width: 100%;
+  height: 50%;
+  margin: auto auto;
+}
+
+.content {
+  background-color: white;
+  width: 80%;
+  height: 1050px;
+  margin: 0 auto;
+}
+
+.blocks {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: fit-content(1em);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 22% 10% 13% 23% 7% 25%;
+      grid-template-columns: 22% 10% 13% 23% 7% 25%;
+  -ms-grid-rows: 7% 31% 31% 31%;
+      grid-template-rows: 7% 31% 31% 31%;
+      grid-template-areas: "title . . . . ." "about about about about clients clients" "connect connect connect contacts contacts officeImap" "titleR titleR regions regions regions officeImap";
+}
+
+.blocks .title {
+  border-radius: 8px;
+  background: #2A2B33;
+  width: 81%;
+  height: 80%;
+  margin: 0 auto;
+  margin-top: auto;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  text-indent: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FF5C00;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+}
+
+.blocks .about {
+  border-radius: 30px;
+  background: #ECECEC;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  width: 94%;
+  height: 90%;
+  margin: auto auto;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: about;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 55% 25% 20%;
+      grid-template-columns: 55% 25% 20%;
+  -ms-grid-rows: 80% 20%;
+      grid-template-rows: 80% 20%;
+      grid-template-areas: "img txt txt" "img . year";
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.blocks .about .image {
+  background-image: url(../assets/index/vorotaRaspash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  margin: auto auto;
+  height: 92%;
+  width: 95%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img;
+}
+
+.blocks .about .text {
+  margin: 0 auto;
+  margin-top: auto;
+  height: 95%;
+  width: 98%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: txt;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2A2B33;
+}
+
+.blocks .about .year {
+  background: #2A2B33;
+  height: 100%;
+  width: 100%;
+  border-radius: 0px 0px 30px 0px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: year;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.blocks .clients {
+  border-radius: 30px;
+  background: #2A2B33;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  width: 90%;
+  height: 90%;
+  margin: auto auto;
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: clients;
+}
+
+.blocks .clients .title {
+  width: 95%;
+  height: 20%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #ffffff00;
+  margin: 0 auto;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #FFFFFF;
+}
+
+.blocks .clients .companies {
+  width: 100%;
+  height: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.blocks .clients .companies .company {
+  border-radius: 10px;
+  background: #FF6B00;
+  width: 85%;
+  height: 65%;
+  margin: auto auto;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.blocks .connect {
+  border-radius: 30px;
+  width: 100%;
+  height: 90%;
+  margin: auto auto;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: connect;
+}
+
+.blocks .connect .title {
+  background-color: #2a2b3300;
+  width: 100%;
+  height: 20%;
+  margin-left: 3%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2A2B33;
+}
+
+.blocks .connect .fields {
+  width: 100%;
+  height: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 20% 60% 20%;
+      grid-template-rows: 20% 60% 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blocks .connect .fields .data1 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blocks .connect .fields .data1 input {
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 2px solid #ff6b00;
+  width: 40%;
+  height: 85%;
+  margin: auto auto;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #303030;
+}
+
+.blocks .connect .fields .message {
+  border: 2px solid #ff6b00;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 80%;
+  width: 90%;
+  margin: auto auto;
+  resize: none;
+  word-break: break-all;
+  word-wrap: break-word;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  color: #303030;
+}
+
+.blocks .connect .fields .btn {
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 8px;
+  margin-left: 65%;
+  width: 30%;
+  height: 90%;
+  background-color: #63E18E;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.blocks .contacts {
+  border-radius: 30px;
+  background: #ECECEC;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  width: 90%;
+  height: 90%;
+  margin: auto auto;
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: contacts;
+  display: -ms-inline-grid;
+  display: inline-grid;
+}
+
+.blocks .contacts .title {
+  all: unset;
+  margin: auto 5%;
+  background-color: #2a2b33;
+  width: 60%;
+  height: 70%;
+  border-radius: 10px;
+  text-indent: 8px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ff6b00;
+}
+
+.blocks .contacts .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 5%;
+  width: 80%;
+  height: 90%;
+}
+
+.blocks .contacts .cont .img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 75%;
+  margin: auto 0px;
+}
+
+.blocks .contacts .cont .text {
+  margin-left: 8px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+}
+
+.blocks .officeImap {
+  width: 90%;
+  height: 95%;
+  margin: auto auto;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 6;
+  grid-area: officeImap;
+  display: -ms-grid;
+  display: grid;
+}
+
+.blocks .officeImap .info {
+  background: #ECECEC;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 40% 60%;
+      grid-template-rows: 40% 60%;
+}
+
+.blocks .officeImap .info .title {
+  all: unset;
+  margin-top: 3%;
+  margin-left: 5%;
+  background-color: #2a2b33;
+  width: 60%;
+  height: 60%;
+  border-radius: 10px;
+  text-indent: 8px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ff6b00;
+}
+
+.blocks .officeImap .info .cont {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5%;
+  width: 80%;
+  height: 50%;
+}
+
+.blocks .officeImap .info .cont .img {
+  margin-bottom: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 95%;
+}
+
+.blocks .officeImap .info .cont .text {
+  width: 70%;
+  margin-left: 8px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+}
+
+.blocks .officeImap .map {
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  margin-top: 10%;
+  width: 100%;
+  height: 90%;
+  display: -ms-grid;
+  display: grid;
+}
+
+.blocks .titleRegion {
+  width: 90%;
+  height: 90%;
+  margin: auto auto;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titleR;
+  display: inline;
+}
+
+.blocks .titleRegion .titleR {
+  height: 20%;
+  background-color: #2A2B33;
+  border-radius: 15px;
+  text-indent: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FF5C00;
+}
+
+.blocks .regions {
+  border-radius: 30px;
+  background: #ECECEC;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  width: 90%;
+  height: 90%;
+  margin: auto auto;
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: regions;
+  display: -ms-grid;
+  display: grid;
+}
+
+.blocks .regions .region {
+  margin: auto auto;
+  height: 70%;
+  max-width: 70%;
+  background-color: #FF5C00;
+  border-radius: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=company.css.map */

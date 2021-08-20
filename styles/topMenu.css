@@ -1,0 +1,101 @@
+@charset "UTF-8";
+.menu {
+  background-color: #2a2b33;
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .logo {
+  background-color: #ffffff;
+  background-image: url(../assets/logo1.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+}
+
+.menu .element {
+  background-color: #ff6b00;
+  width: 100px;
+  height: 100%;
+  margin-left: 2px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.menu .element .image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: auto auto;
+  width: 50%;
+  height: 77%;
+}
+
+.menu .element .title {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5vw;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  height: 23%;
+  margin: auto auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  /* Отменяем перенос текста */
+  overflow: hidden;
+  /* Обрезаем содержимое */
+}
+
+.menu .office {
+  width: calc(100% - 500px - 15%);
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  margin-right: auto;
+}
+
+.menu .office .item {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 1.4vw;
+  line-height: 1.4vw;
+  text-indent: 1.5vw;
+  color: white;
+  width: 100%;
+  height: 50%;
+  margin: auto auto;
+}
+
+.menu .contacts1 {
+  background-color: #ff6b00;
+  width: 15%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  margin-left: auto;
+}
+
+.menu .contacts1 .item {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 1.4vw;
+  line-height: 24px;
+  text-indent: 10px;
+  color: white;
+  width: 100%;
+  height: 50%;
+  margin: auto auto;
+}
+/*# sourceMappingURL=topMenu.css.map */

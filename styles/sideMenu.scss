@@ -1,0 +1,89 @@
+.catalogMenu{
+// width: 11.2vw;
+width: 202px;
+background-color: #373D44;
+z-index: 0;
+user-select: none;
+position: fixed;
+top: 100px;
+padding-bottom: 2px;
+display: inline;
+
+.catalogItem{
+margin-top: 2px;
+background-color: #FF6B00;
+width: 100%;
+height: 50px;
+display: flex;
+text-decoration: none;
+
+.imgOtkatZbori{
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 100%;
+//background-color: aqua;
+background-image: url(../../assets/icons/menu/catalog_zabor.png);
+}
+
+    .imgOtkatVorota{
+        background-position: center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        width: 20%;
+        height: 100%;
+//background-color: aqua;
+background-image: url(../../assets/icons/menu/catalog_vorota1.png);
+    }
+
+    .imgRaspVorota{
+        background-position: center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        width: 20%;
+        height: 100%;
+//background-color: aqua;
+background-image: url(../../assets/icons/menu/catalog_vorota.png);
+    }
+
+    .imgKalitki{
+        background-position: center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        width: 20%;
+        height: 100%;
+//background-color: aqua;
+background-image: url(../../assets/icons/menu/catalog_calitka.png);
+    }
+
+    .imgGrill{
+        background-position: center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        width: 20%;
+        height: 100%;
+//background-color: aqua;
+background-image: url(../../assets/icons/menu/catalog_grill.png);
+    }
+
+    .textC{
+        width: 80%;
+        height: 100%;
+       // background-color: rgb(30, 255, 0);
+
+        font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 1.1vw;
+line-height: 28px;
+display: flex;
+align-items: center;
+user-select: none;
+text-decoration: none;
+
+color: #FFFFFF;
+    }
+
+}
+}
